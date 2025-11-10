@@ -162,8 +162,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 0 0 0 1.25rem;
+  list-style: none; /* hide bullets */
+  margin: 0;
   padding: 0;
   display: block;
 }
@@ -176,6 +176,28 @@ footer {
   padding: 6px 8px;
   border-radius: 4px;
   display: inline-block;
+}
+
+/* Unregister (delete) button next to participant */
+.unregister-btn {
+  background: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+}
+
+.unregister-btn:hover {
+  background: #e53935;
 }
 
 .participants-empty {
